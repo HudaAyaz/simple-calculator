@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="calc.css">
+    <title>Calculator App</title>
+  </head>
+  <body>
+      <h1 class="display">MY CALCULATOR APP</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col d-grid gap-2 display m-1">
+                <input type="text" name="display" id="display" disabled>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 mx-auto d-grid gap-2 m-1">
+                <button onclick="show(9)" class="btn btn-dark">9</button>
+            </div>
+            <div class="col-md-3 mx-auto d-grid gap-2 m-1">
+                <button onclick="show(8)" class="btn btn-dark">8</button>
+            </div>
+            <div class="col-md-3 mx-auto d-grid gap-2 m-1">
+                <button onclick="show(7)" class="btn btn-dark">7</button>
+            </div>
+            <div class="col-md-3 mx-auto d-grid gap-2 m-1">
+                <button onclick="show('+')" class="btn btn-dark">+</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 mx-auto d-grid gap-2 m-1">
+                <button onclick="show(6)" class="btn btn-dark">6</button>
+            </div>
+            <div class="col-md-3 mx-auto d-grid gap-2 m-1">
+                <button onclick="show(5)" class="btn btn-dark">5</button>
+            </div>
+            <div class="col-md-3 mx-auto d-grid gap-2 m-1">
+                <button onclick="show(4)" class="btn btn-dark">4</button>
+            </div>
+            <div class="col-md-3 mx-auto d-grid gap-2 m-1">
+                <button onclick="show('-')" class="btn btn-dark">-</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 mx-auto d-grid gap-2 m-1">
+                <button onclick="show(3)" class="btn btn-dark">3</button>
+            </div>
+            <div class="col-md-3 mx-auto d-grid gap-2 m-1">
+                <button onclick="show(2)" class="btn btn-dark">2</button>
+            </div>
+            <div class="col-md-3 mx-auto d-grid gap-2 m-1">
+                <button onclick="show(1)" class="btn btn-dark">1</button>
+            </div>
+            <div class="col-md-3 mx-auto d-grid gap-2 m-1">
+                <button onclick="show('*')" class="btn btn-dark">*</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 mx-auto d-grid gap-2 m-1">
+                <button onclick="show('.')" class="btn btn-dark">.</button>
+            </div>
+            <div class="col-md-3 mx-auto d-grid gap-2 m-1">
+                <button onclick="show(0)" class="btn btn-dark">0</button>
+            </div>
+            <div class="col-md-3 mx-auto d-grid gap-2 m-1">
+                <button onclick="clearDisplay()" class="btn btn-dark">C</button>
+            </div>
+            <div class="col-md-3 mx-auto d-grid gap-2 m-1">
+                <button onclick="show('/')" class="btn btn-dark">/</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mx-auto d-grid gap-2 m-1">
+                <button onclick="calculate()" class="btn btn-dark">=</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="calc.js"></script>
+    </body>
+</html>
